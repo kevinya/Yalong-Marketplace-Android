@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yalong.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+
+    <!-- Service provider mode button -->
+    <Button
+        android:id="@+id/dashboardServiceProvider"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_menu_friendslist"
+        android:paddingLeft="5dp"
+        android:text="Mode prestataire" />
+
+    <!-- profile button -->
+    <Button
+        android:id="@+id/dashboardProfile"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_menu_home"
+        android:text="Mon profil" />
+    
+    <!-- My requests button -->
+    <Button
+        android:id="@+id/dashboardMyRequests"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_menu_slideshow"
+        android:text="Mes demandes" />
+
+    <!-- Do a request button -->
+    <Button
+        android:id="@+id/dashboardDoRequest"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_menu_compose"
+        android:paddingLeft="5dp"
+        android:text="Faire une demande" />
+    
+    <!-- Events Button -->
+    <Button
+        android:id="@+id/btn_events"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_menu_home"
+        android:text="Events"
+        android:visibility="invisible" />
+
+    <!-- Photos Button -->
+    <Button
+        android:id="@+id/btn_photos"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_menu_home"
+        android:text="Photos"
+        android:visibility="invisible" />
+
+</com.yalong.DashboardLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yalong"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        
+        <service android:enabled="true" android:name="com.yalong.service.RequestUploaderService"></service>
+        <service android:enabled="true" android:name="com.yalong.service.ServiceProviderUploaderService"></service>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".Main" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Login" >
+            <intent-filter >
+                <action android:name="com.yalong.LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Signin" >
+            <intent-filter >
+                <action android:name="com.yalong.SIGNIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".Home" >
+            <intent-filter >
+                <action android:name="com.yalong.HOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".RequestService" >
+            <intent-filter >
+                <action android:name="com.yalong.REQUESTSERVICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".MyRequests" >
+            <intent-filter >
+                <action android:name="com.yalong.MYREQUESTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".DetailRequest" >
+            <intent-filter >
+                <action android:name="com.yalong.DETAILREQUEST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".ServiceProviderSignin" >
+            <intent-filter >
+                <action android:name="com.yalong.SERVICEPROVIDERSIGNIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.serviceprovider.RequestTabWidget" >
+            <intent-filter >
+                <action android:name="com.yalong.serviceprovider.REQUESTTABWIDGET" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".serviceprovider.ServiceProviderHome" >
+            <intent-filter >
+                <action android:name="com.yalong.serviceprovider.SERVICEPROVIDERHOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.UserRequestTabWidget" >
+            <intent-filter >
+                <action android:name="com.yalong.USERREQUESTTABWIDGET" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.Dashboard" >
+            <intent-filter >
+                <action android:name="com.yalong.DASHBOARD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.serviceprovider.MatchingRequestsActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.serviceprovider.AcceptedRequestsActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.serviceprovider.WaitingRequestsActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.serviceprovider.FinishedRequestsActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.UserAllRequestsActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.UserAcceptedRequestsActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.UserWaitingRequestsActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.UserFinishedRequestsActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.serviceprovider.MatchingDetailRequests" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.serviceprovider.OfferForm" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.UserWaitingDetailRequests" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.OfferChoiceActivity" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.UserAcceptedDetailRequests" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.UserFinishedDetailRequests" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.UserRateServiceProvider" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.file.PhotoPicker" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.file.VideoPicker" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.serviceprovider.ServiceProviderEditProfil" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.serviceprovider.ServiceProviderViewProfil" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.UserEditProfil" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.yalong.user.UserViewProfile" >
+        </activity>
+    </application>
+
+</manifest>

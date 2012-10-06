@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/ActionBarCompat"
+        android:background="@drawable/header"
+        android:baselineAligned="true"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="Yalong Marketplace"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faire une demande de service"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Professionnel demandé :"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etProRequest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="" >
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Adresse :"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etAdressRequest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textPostalAddress" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Date :"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDateRequest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date" >
+            </EditText>
+
+            <!-- <DatePicker -->
+            <!-- android:id="@+id/datePicker" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" /> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Heure :"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etTimeRequest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description du service demandé :"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDescriptionRequest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Photos :"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/buttonAddPhoto"
+                style="@style/ButtonText"
+                android:background="@drawable/custom_button"
+                android:text="Ajouter une photo" >
+            </Button>
+            
+		    <Gallery
+		        android:id="@+id/galleryPhoto"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Vidéos :"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/buttonAddVideo"
+                style="@style/ButtonText"
+                android:background="@drawable/custom_button"
+                android:text="Ajouter une vidéo" >
+            </Button>
+            
+		    <Gallery
+		        android:id="@+id/galleryVideo"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonRegisterRequest"
+                style="@style/ButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/custom_button"
+                android:text="Enregistrer ma demande" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

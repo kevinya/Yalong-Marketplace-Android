@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yalong</string>
+    <string name="app_url">http://dev.juniorisep.com/bookmillenium/public_html/marketplace/</string>
+<!--     <string name="civilite">Civilité</string> -->
+
+<!--     <string-array name="civilites"> -->
+<!--         <item>Monsieur</item> -->
+<!--         <item>Madame</item> -->
+<!--         <item>Mademoiselle</item> -->
+<!--     </string-array> -->
+
+</resources>
